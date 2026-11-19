@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Clásicos No Mueren</title>
+    <style>
+        /* Estilos generales con estética retro-moderna */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #12121a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #2b1055 0%, #7597de 100%);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #ff007f;
+            box-shadow: 0 4px 15px rgba(255, 0, 127, 0.3);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #00f2fe;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+            margin-bottom: 15px;
+            background-color: #1a1a2e;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            color: #d1e8ff;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #1a1a26;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #00f2fe;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff007f;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones */
+        section {
+            background-color: #1e1e2c;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #ff007f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        section h2 {
+            color: #00f2fe;
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* Tarjetas internas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .card {
+            background-color: #272738;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #383850;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #ff7eb3;
+            font-size: 1.15rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #ff007f;
+            color: white;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Lista de éxitos */
+        ul.hits-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.hits-list li {
+            background-color: #272738;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .year {
+            background-color: #00f2fe;
+            color: #12121a;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a26;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO CON AVATAR Y TÍTULO -->
+    <header>
+        <!-- Avatar estilo disco de vinilo / DJ retro generado por SVG -->
+        <img class="avatar" src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111' stroke='%23ff007f' stroke-width='3'/><circle cx='50' cy='50' r='35' fill='none' stroke='%23333' stroke-width='2'/><circle cx='50' cy='50' r='25' fill='none' stroke='%23333' stroke-width='2'/><circle cx='50' cy='50' r='16' fill='%2300f2fe'/><circle cx='50' cy='50' r='5' fill='%23111'/></svg>" alt="Avatar Disco de Vinilo">
+        <h1>Los Clásicos No Mueren</h1>
+        <p>Tu portal definitivo sobre la época dorada de la música de los 80s y 90s</p>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#noticias">Noticias de Artistas</a>
+        <a href="#exitos">Éxitos 80s y 90s</a>
+        <a href="#equipos">Equipos Legendarios</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN 1: NOTICIAS DE ARTISTAS -->
+        <section id="noticias">
+            <h2>📰 Noticias de Artistas</h2>
+            <div class="grid">
+                <article class="card">
+                    <span class="tag">Giras y Regresos</span>
+                    <h3>Leyendas del Synth-Pop anuncian gira mundial</h3>
+                    <p>Las bandas más emblemáticas de los años 80 vuelven a los escenarios con sus alineaciones originales y remasterizaciones en vivo de sus mayores clásicos.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">Aniversario</span>
+                    <h3>Se cumplen más de 30 años del auge del Grunge y Rock Alternativo</h3>
+                    <p>Recordamos cómo el sonido de principios de los 90 cambió para siempre la industria musical y las estaciones de radio alrededor del mundo.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: TEMAS ÉXITOS 80s Y 90s -->
+        <section id="exitos">
+            <h2>🎵 Temas Éxitos: 80s y 90s</h2>
+            <ul class="hits-list">
+                <li>
+                    <span><strong>a-ha</strong> - Take On Me</span>
+                    <span class="year">1985</span>
+                </li>
+                <li>
+                    <span><strong>Michael Jackson</strong> - Billie Jean</span>
+                    <span class="year">1982</span>
+                </li>
+                <li>
+                    <span><strong>Guns N' Roses</strong> - Sweet Child O' Mine</span>
+                    <span class="year">1987</span>
+                </li>
+                <li>
+                    <span><strong>Nirvana</strong> - Smells Like Teen Spirit</span>
+                    <span class="year">1991</span>
+                </li>
+                <li>
+                    <span><strong>Corona</strong> - The Rhythm of the Night</span>
+                    <span class="year">1993</span>
+                </li>
+                <li>
+                    <span><strong>Oasis</strong> - Wonderwall</span>
+                    <span class="year">1995</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 3: EQUIPOS DE MÚSICA DE ESAS DÉCADAS -->
+        <section id="equipos">
+            <h2>📻 Equipos de Música Legendarios</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">Portátil</span>
+                    <h3>Sony Walkman TPS-L2</h3>
+                    <p>El reproductor de casetes portátil que revolucionó la forma de escuchar música en la calle durante los años 80, con sus icónicos botones azul y plata.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">Sonido Urbano</span>
+                    <h3>Boombox JVC RC-M90</h3>
+                    <p>Conocido como el "Rey de los Boomboxes", este radiograbador estéreo de doble casetera dominó las calles y las fiestas de breakdance en los 80.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">Era Digital</span>
+                    <h3>Sony Discman D-50</h3>
+                    <p>El primer reproductor de CD portátil que marcó la transición del casete al disco compacto a finales de los 80 y principios de los 90.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Los Clásicos No Mueren - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
